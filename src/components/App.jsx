@@ -15,19 +15,10 @@ const MovieReviews = lazy(() => import('./MovieReviews/MovieReviews'));
 const Navigation = lazy(() => import('./Navigation/Navigation'));
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
 
-const buildCssClass = ({ isActive }) =>
-  clsx(styles.link, isActive && styles.active);
-
 function App() {
-  // const [searchTerm, setSearchTerm] = useState('');
-
-  // const handleSearch = term => {
-  //   setSearchTerm(term);
-  // };
   return (
     <div>
       <Navigation />
-      <NavLink className={buildCssClass} to="/movies/:movieId"></NavLink>
       <div>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
