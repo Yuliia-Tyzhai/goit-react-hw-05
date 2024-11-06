@@ -1,0 +1,25 @@
+/* NotFoundPage.module.css */
+.notFound {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.notFound h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.notFound p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.notFound a {
+  font-size: 1.5em;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.notFound a:hover {
+  text-decoration: underline;
+}
